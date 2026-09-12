@@ -9,10 +9,9 @@ class Solution {
         {
             return function((n/2),c+1);
         }
-        else
-        {
+    
             return function((n-1),c+1);
-        }
+        
     }
     public int numberOfSteps(int num) {
         return function(num,0);
