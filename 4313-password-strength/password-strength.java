@@ -5,6 +5,8 @@ class Solution {
         {
             map.add(x);
         }
+        //char[] arr = {'!','@','#','$'};
+        String arr = "!@#$";
         int ans = 0;
         for(char x : map)
         {
@@ -14,7 +16,9 @@ class Solution {
                 ans += 1;
             else if (Character.isDigit(x))
                 ans += 3;
-            else if (x == '!' || x == '@' || x == '#' || x == '$')
+            // else if (x == '!' || x == '@' || x == '#' || x == '$')
+            //     ans += 5;
+            else if (arr.indexOf(x)!=-1)
                 ans += 5;
         }
         return ans;
